@@ -79,7 +79,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <a href="http://localhost:8000/todo">
+                        <h5>Click here</h5>
+                    </a>
                 </div>
 
                 <div class="links">

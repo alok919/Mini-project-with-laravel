@@ -7,10 +7,16 @@
 		<h2 class="text-center">Todo list</h2>
 
 	<ul class="list-group">
-		  <li class="list-group-item d-flex justify-content-between align-items-center">
-		    <h5>This is first item</h5>
-		    
-		  </li>
+
+		@foreach($todos as $todo)
+			<li class="list-group-item ">
+		    	{{$todo->body}}
+		    	<span class="pull-right">{{$todo->created_at->diffForHumans()}}</span>
+		    	
+		  	</li>
+
+		@endforeach
+		  
    </ul>
 	</div>
 @endsection
